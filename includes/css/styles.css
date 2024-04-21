@@ -1,0 +1,250 @@
+body {
+	background-image: url('../../images/fondo.png');
+	background-repeat: repeat;
+	background-position: center;
+  }
+
+
+.cintillo {
+  float: none;
+  /*margin-left: auto;
+  margin-right: auto;*/
+  margin: 10px auto 20px auto;
+  padding: 11px;
+  color: #fff;
+  border-radius: 7px;
+  width: 100%;
+}
+
+.a1{
+	background-image: url(../../images/banner-1.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: 1000px ;
+	background-size: 100% 100%;
+}
+
+.a2{
+	background-image: url(../../images/banner-2.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: 1000px ;
+	background-size: 100% 100%;
+}
+
+.a3{
+	background-image: url(../../images/banner-3.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: 1000px ;
+	background-size: 100% 100%;
+}
+
+.a4{
+	background-image: url(../../images/banner-4.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: 1000px ;
+	background-size: 100% 100%;
+}
+.a5{
+	background-image: url(../../images/banner-5.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: 1000px ;
+	background-size: 100% 100%;
+}
+
+.a6{
+	background-image: url(../../images/banner-6.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: 1000px ;
+	background-size: 100% 100%;
+}
+
+.a7{
+	background-image: url(../../images/banner-7.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: 1000px ;
+	background-size: 100% 100%;
+}
+
+.a8{
+	background-image: url(../../images/banner-8.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: 1000px ;
+	background-size: 100% 100%;
+}
+.a9{
+	background-image: url(../../images/banner-9.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: 1000px ;
+	background-size: 100% 100%;
+}
+
+.area-ubicacion{
+	background-image: url(../../images/banner_area_ubicacion.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: 1000px ;
+	background-size: 100% 100%;
+}
+
+.especies-habitan{
+	background-image: url(../../images/banner_especies_habitan.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: 1000px ;
+	background-size: 100% 100%;
+}
+
+.estado-fitosanitario{
+	background-image: url(../../images/banner_estado_fitosanitario.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: 1000px ;
+	background-size: 100% 100%;
+}
+
+.creditos-sitio{
+	background-image: url(../../images/banner_creditos.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: 1000px ;
+	background-size: 100% 100%;
+}
+
+.plagas_1{
+	background-image: url(../../images/banner_plagas.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: 1000px ;
+	background-size: 100% 100%;
+}
+
+.arbolado-1{
+	background-image: url(../../images/banner_arbolado.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: 1000px ;
+	background-size: 100% 100%;
+}
+
+.estado-fitosanitario-sano{
+	background-image: url(../../images/banner_estado_sano.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: 1000px ;
+	background-size: 100% 100%;
+}
+
+.estado-fitosanitario-plaga{
+	background-image: url(../../images/banner_estado_plaga.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: 1000px ;
+	background-size: 100% 100%;
+}
+
+.estado-fitosanitario-otro{
+	background-image: url(../../images/banner_estado_otro.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: 1000px ;
+	background-size: 100% 100%;
+}
+
+.mapa_1{
+	background-image: url(../../images/banner_mapas.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: 1000px ;
+	background-size: 100% 100%;
+}
+
+.galeria-imagenes{
+	background-image: url(../../images/banner_galeria.png);
+	background-repeat: no-repeat;
+	-webkit-background-size: cover; /* For WebKit*/
+    -moz-background-size: cover;    /* Mozilla*/
+    -o-background-size: cover;      /* Opera*/
+    background-size: 1000px ;
+	background-size: 100% 100%;
+}
+
+.titulo_cintillo{
+	margin-top: 15px;
+	text-align: right;
+	font-weight: bold;
+	font-size: 16pt;
+	
+}
+
+.google-map {
+  height: 25rem;
+  position: relative;
+}
+.google-map iframe {
+  height: 100%;
+  width: 100%;
+}
+.google-map [data-state-details] {
+  color: #6b6763;
+  font-family: Montserrat;
+  height: 1.5em;
+  margin-top: -0.75em;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
+  position: absolute;
+  text-align: center;
+  top: 50%;
+  width: 100%;
+}
+.google-map[data-state] {
+  background: #e9e5dc;
+}
+.google-map[data-state="loading"] [data-state-details] {
+  display: none;
+}
