@@ -7,8 +7,9 @@
 				Teléfono: +52 (33) 3770 3300</p>
      		</div>
       		<div class="col-md-4 texto_f nav_f">
-				<li><a href="?q=inicio">Inicio</a></li>
-     		    <li><a href="?q=exit">Salir</a></li>
+			<li>Conceptualización de servicios en la nube</li>
+				<li>Martin Pizano Moreno</li>
+     		    <li>mpizanom@gmail.com</li>
       		</div>
       		<div class="col-md-12 nav_f text-center">
 				<br><br><br>
