@@ -12,9 +12,9 @@ $dic_vacio = "";
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <meta id="" name="" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
-  <title>Modelo Educativo CUCEA</title>
+  <title>Modelo Educativo</title>
   <meta name="Keywords" content="" />
-  <meta name="Description" content="Modelo Educativo CUCEA" />
+  <meta name="Description" content="Modelo Educativo" />
   <meta name="Author" content="martin.pizano@udg.mx" />
   <!-- CSS styles for this template -->
   <link href="includes/css/offcanvas.css" rel="stylesheet">
