@@ -1,147 +1,198 @@
-<!DOCTYPE html>
-<html>
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-MX" xml:lang="es-MX">
 
-<style>
-    .modal {
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: rgba(0, 0, 0, 0.5);
-      /* Fondo oscuro con transparencia */
-      z-index: 1000;
-      /* Asegura que el modal se coloque encima de todo */
-      overflow: auto;
-      /* Permite el desplazamiento si es necesario */
-    }
-  
-    .modal-content {
-      background-color: white;
-      padding: 20px;
-      border-radius: 8px;
-      width: 95vw;
-      /* 80% del ancho de la ventana */
-      height: 95vh;
-      /* 80% de la altura de la ventana */
-      display: flex;
-      justify-content: center;
-      align-items: center;
-    }
-  </style>
-  
-  
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta id="" name="" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Modelo Educativo</title>
+    <meta name="Keywords" content="" />
+    <meta name="Description" content="Modelo Educativo" />
+    <meta name="Author" content="martin.pizano@udg.mx" />
+    <!-- CSS styles for this template -->
+    <link href="includes/css/offcanvas.css" rel="stylesheet">
+    <link href="includes/css/styles.css" rel="stylesheet">
+
+    <!-- MENU styles for this template -->
+    <link href="includes/css/menu.css" rel="stylesheet">
+
+    <!-- Los estilos de las librerías:
+				Bootstrap core CSS -->
+
+    <link rel="stylesheet" href="includes/css/font-awesome.min.css">
+    <link href="includes/css/jquery-ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/31cc1d776d.js" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+    <style>
+        .modal {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: rgba(0, 0, 0, 0.5);
+            /* Fondo oscuro con transparencia */
+            z-index: 1000;
+            /* Asegura que el modal se coloque encima de todo */
+            overflow: auto;
+            /* Permite el desplazamiento si es necesario */
+        }
+
+        .modal-content {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            width: 95vw;
+            /* 80% del ancho de la ventana */
+            height: 95vh;
+            /* 80% de la altura de la ventana */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    </style>
+
+</head>
+
 <body>
     <div class="page-header">
         <h2 class="text-center">MPM</h2>
-      </div>
-      <!-- Menú de navegación -->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    </div>
+    <!-- Menú de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <a class="navbar-brand" href="#">CUCEA</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="#introduccion">Introducción</a>
-            </li>
-          </ul>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#introduccion">Introducción</a>
+                </li>
+            </ul>
         </div>
-      </nav>
-      
-      <!-- Contenido -->
-      <div class="container">
+    </nav>
+
+    <!-- Contenido -->
+    <div class="container">
         <!-- Introducción breve -->
         <section id="introduccion" class="my-5">
-          <div class="card mb-4">
-            <div class="card-header">
-              <h3>Introducción</h3>
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h3>Introducción</h3>
+                </div>
+                <div class="card-body">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Vjqi_3J8Xxo?si=5xMFJkp6xz6yoJNW"
+                        title="YouTube video player" frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
             </div>
-            <div class="card-body">
-              <iframe width="560" height="315" src="https://www.youtube.com/embed/Vjqi_3J8Xxo?si=5xMFJkp6xz6yoJNW" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-            </div>
-          </div>
         </section>
-      
-       
+
+
         <!-- Botón para abrir datos -->
         <button id="opener" class="btn btn-info btn-lg">Abrir Modelo Educativo</button>
-      </div>
-      <!-- Diálogo para mostrar datos -->
-      <div id="dialog" title="Modelo Educativo - CUCEA" style="background-image: url('indicadores_960.png'); background-size: contain; background-position: center; background-repeat: no-repeat;">
+    </div>
+    <!-- Diálogo para mostrar datos -->
+    <div id="dialog" title="Modelo Educativo - CUCEA"
+        style="background-image: url('indicadores_960.png'); background-size: contain; background-position: center; background-repeat: no-repeat;">
         <div id="loading">Cargando...</div>
         <iframe id="iframeContent" width="100%" height="100%" src=""></iframe>
-      </div>
-      
-      <!-- Script para manejar el diálogo y cargar datos -->
-      <script>
-        $(document).ready(function() {
-          // Configuración del diálogo modal
-          $("#dialog").dialog({
-            autoOpen: false,
-            modal: true,
-            width: '95%', // Ancho del 95% de la pantalla
-            resizable: true,
-            // Ajustar el alto según el contenido
-            height: 'auto',
-            create: function(event, ui) {
-              // Ajusta el tamaño de la imagen de fondo al tamaño del diálogo cuando se crea
-              adjustDialogBackground();
-            },
-            resize: function(event, ui) {
-              // Ajusta el tamaño de la imagen de fondo al tamaño del diálogo cuando se redimensiona
-              adjustDialogBackground();
+    </div>
+
+    <!-- Script para manejar el diálogo y cargar datos -->
+    <script>
+        $(document).ready(function () {
+            // Configuración del diálogo modal
+            $("#dialog").dialog({
+                autoOpen: false,
+                modal: true,
+                width: '95%', // Ancho del 95% de la pantalla
+                resizable: true,
+                // Ajustar el alto según el contenido
+                height: 'auto',
+                create: function (event, ui) {
+                    // Ajusta el tamaño de la imagen de fondo al tamaño del diálogo cuando se crea
+                    adjustDialogBackground();
+                },
+                resize: function (event, ui) {
+                    // Ajusta el tamaño de la imagen de fondo al tamaño del diálogo cuando se redimensiona
+                    adjustDialogBackground();
+                }
+            });
+
+            // Evento de clic para abrir el diálogo y cargar el iframe
+            $("#opener").click(function () {
+                // Establece la URL que deseas cargar en el iframe
+                var iframeSrc = "modelo/";
+
+                // Establece la fuente del iframe
+                $("#iframeContent").attr("src", iframeSrc);
+
+                // Muestra el diálogo modal
+                $("#dialog").dialog("open");
+
+                // Muestra un mensaje de carga (opcional)
+                $("#loading").show();
+            });
+
+            // Evento de carga del iframe
+            $("#iframeContent").on('load', function () {
+                // Oculta el mensaje de "Cargando..."
+                $("#loading").hide();
+
+                // Ajusta el tamaño del diálogo al 95% de la pantalla después de que el contenido esté cargado
+                var screenWidth = $(window).width();
+                var screenHeight = $(window).height();
+                $("#dialog").dialog("option", {
+                    width: screenWidth * 0.95,
+                    height: screenHeight * 0.95
+                });
+
+                // También puedes ajustar el tamaño del iframe para que coincida con el tamaño del diálogo
+                $("#iframeContent").width($("#dialog").width()).height($("#dialog").height());
+
+                // Ajustar el tamaño de la imagen de fondo al tamaño del diálogo
+                adjustDialogBackground();
+            });
+
+            // Función para ajustar el tamaño de la imagen de fondo
+            function adjustDialogBackground() {
+                $("#dialog").css({
+                    backgroundSize: 'contain', // O puedes usar 'cover' según lo que desees
+                    backgroundPosition: 'center',
+                    backgroundRepeat: 'no-repeat'
+                });
             }
-          });
-      
-          // Evento de clic para abrir el diálogo y cargar el iframe
-          $("#opener").click(function() {
-            // Establece la URL que deseas cargar en el iframe
-            var iframeSrc = "modelo/";
-      
-            // Establece la fuente del iframe
-            $("#iframeContent").attr("src", iframeSrc);
-      
-            // Muestra el diálogo modal
-            $("#dialog").dialog("open");
-      
-            // Muestra un mensaje de carga (opcional)
-            $("#loading").show();
-          });
-      
-          // Evento de carga del iframe
-          $("#iframeContent").on('load', function() {
-            // Oculta el mensaje de "Cargando..."
-            $("#loading").hide();
-      
-            // Ajusta el tamaño del diálogo al 95% de la pantalla después de que el contenido esté cargado
-            var screenWidth = $(window).width();
-            var screenHeight = $(window).height();
-            $("#dialog").dialog("option", {
-              width: screenWidth * 0.95,
-              height: screenHeight * 0.95
-            });
-      
-            // También puedes ajustar el tamaño del iframe para que coincida con el tamaño del diálogo
-            $("#iframeContent").width($("#dialog").width()).height($("#dialog").height());
-      
-            // Ajustar el tamaño de la imagen de fondo al tamaño del diálogo
-            adjustDialogBackground();
-          });
-      
-          // Función para ajustar el tamaño de la imagen de fondo
-          function adjustDialogBackground() {
-            $("#dialog").css({
-              backgroundSize: 'contain', // O puedes usar 'cover' según lo que desees
-              backgroundPosition: 'center',
-              backgroundRepeat: 'no-repeat'
-            });
-          }
         });
-      </script>
+    </script>
+
+
+    <script type="text/javascript">
+        function mostrar() {
+            document.getElementById("ocultar").style.display = "block";
+        }
+
+        function ocultar() {
+            document.getElementById("ocultar").style.display = "none";
+        }
+    </script>
 </body>
+
 </html>
