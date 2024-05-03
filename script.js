@@ -1,3 +1,4 @@
+// Función para cargar y mostrar los registros del archivo JSON
 function mostrarRegistros() {
     fetch('data.json')
         .then(response => response.json())
@@ -5,54 +6,88 @@ function mostrarRegistros() {
             const outputDiv = document.getElementById('output');
             outputDiv.innerHTML = ''; // Limpiar el contenido existente
 
+            // Mostrar cada registro en el contenedor de salida con botones de editar y eliminar
             data.forEach((registro, index) => {
-                const registroDiv = document.createElement('div');
-                registroDiv.textContent = `Nombre: ${registro.nombre}, Edad: ${registro.edad}`;
-                
-                // Botón para eliminar registro
-                const deleteBtn = document.createElement('button');
-                deleteBtn.textContent = 'Eliminar';
-                deleteBtn.onclick = () => eliminarRegistro(index);
-                registroDiv.appendChild(deleteBtn);
-
-                // Botón para editar registro
-                const editBtn = document.createElement('button');
-                editBtn.textContent = 'Editar';
-                editBtn.onclick = () => editarRegistro(index, registro);
-                registroDiv.appendChild(editBtn);
-
-                outputDiv.appendChild(registroDiv);
+                outputDiv.innerHTML += `
+                    <div>
+                        <strong>Nombre:</strong> ${registro.nombre}, <strong>Edad:</strong> ${registro.edad}
+                        <button onclick="editarRegistro(${index})">Editar</button>
+                        <button onclick="eliminarRegistro(${index})">Eliminar</button>
+                    </div>
+                `;
             });
         })
-        .catch(error => console.error('Error al obtener los registros:', error));
+        .catch(error => console.error('Error al cargar los registros:', error));
 }
 
+// Función para agregar un registro
 function agregarRegistro(nombre, edad) {
     fetch('data.json')
         .then(response => response.json())
         .then(data => {
-            data.push({nombre, edad});
-            return fetch('data.json', {
-                method: 'PUT',
+            // Agregar el nuevo registro a los datos existentes
+            data.push({ nombre, edad });
+
+            // Enviar los datos al servidor para guardarlos
+            fetch('guardar.php', {
+                method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
                 },
                 body: JSON.stringify(data)
-            });
+            })
+            .then(() => {
+                // Mostrar los registros actualizados
+                mostrarRegistros();
+            })
+            .catch(error => console.error('Error al enviar datos al servidor:', error));
         })
-        .then(() => mostrarRegistros())
-        .catch(error => console.error('Error al agregar registro:', error));
+        .catch(error => console.error('Error al cargar los registros:', error));
 }
 
-function editarRegistro(index, registro) {
-    const nuevoNombre = prompt('Ingrese el nuevo nombre:', registro.nombre);
-    const nuevaEdad = prompt('Ingrese la nueva edad:', registro.edad);
+/*
+function agregarRegistro(nombre, edad) {
+    // Obtener los datos existentes del archivo JSON
+    fetch('data.json')
+        .then(response => response.json())
+        .then(data => {
+            // Agregar el nuevo registro a los datos existentes
+            data.push({ nombre, edad });
 
-    if (nuevoNombre !== null && nuevaEdad !== null) {
+            // Enviar los datos al servidor para guardarlos
+            fetch('data.json', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            .then(() => {
+                // Mostrar los registros actualizados
+                mostrarRegistros();
+            })
+            .catch(error => console.error('Error al agregar registro:', error));
+        })
+        .catch(error => console.error('Error al cargar los registros:', error));
+} */
+
+
+
+// Función para editar un registro
+function editarRegistro(index) {
+    const nuevoNombre = prompt('Ingrese el nuevo nombre:');
+    const nuevaEdad = prompt('Ingrese la nueva edad:');
+
+    if (nuevoNombre && nuevaEdad) {
+        // Obtener los datos existentes del archivo JSON
         fetch('data.json')
             .then(response => response.json())
             .then(data => {
-                data[index] = {nombre: nuevoNombre, edad: nuevaEdad};
+                // Editar el nombre y la edad del registro seleccionado
+                data[index].nombre = nuevoNombre;
+                data[index].edad = nuevaEdad;
+
+                // Sobrescribir el archivo JSON con los datos actualizados
                 return fetch('data.json', {
                     method: 'PUT',
                     headers: {
@@ -61,29 +96,55 @@ function editarRegistro(index, registro) {
                     body: JSON.stringify(data)
                 });
             })
-            .then(() => mostrarRegistros())
+            .then(() => {
+                // Mostrar los registros actualizados
+                mostrarRegistros();
+            })
             .catch(error => console.error('Error al editar registro:', error));
     }
 }
 
+// Función para eliminar un registro
 function eliminarRegistro(index) {
-    fetch('data.json')
-        .then(response => response.json())
-        .then(data => {
-            data.splice(index, 1);
-            return fetch('data.json', {
-                method: 'PUT',
-                headers: {
-                    'Content-Type': 'application/json'
-                },
-                body: JSON.stringify(data)
-            });
-        })
-        .then(() => mostrarRegistros())
-        .catch(error => console.error('Error al eliminar registro:', error));
+    if (confirm('¿Estás seguro de que deseas eliminar este registro?')) {
+        // Obtener los datos existentes del archivo JSON
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                // Eliminar el registro seleccionado
+                data.splice(index, 1);
+
+                // Sobrescribir el archivo JSON con los datos actualizados
+                return fetch('data.json', {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(data)
+                });
+            })
+            .then(() => {
+                // Mostrar los registros actualizados
+                mostrarRegistros();
+            })
+            .catch(error => console.error('Error al eliminar registro:', error));
+    }
 }
 
-// Ejemplo de agregar un registro cuando se carga la página
-document.addEventListener('DOMContentLoaded', () => {
-    agregarRegistro('Ejemplo', 30);
+// Agregar evento submit al formulario
+document.getElementById('agregarForm').addEventListener('submit', function (event) {
+    event.preventDefault(); // Evitar el comportamiento por defecto del formulario
+
+    // Obtener valores del formulario
+    const nombre = document.getElementById('nombre').value;
+    const edad = document.getElementById('edad').value;
+
+    // Llamar a la función para agregar el registro
+    agregarRegistro(nombre, edad);
+
+    // Limpiar los campos del formulario después de agregar el registro
+    this.reset();
 });
+
+// Cargar y mostrar los registros al cargar la página
+document.addEventListener('DOMContentLoaded', mostrarRegistros);

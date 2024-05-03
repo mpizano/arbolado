@@ -61,74 +61,64 @@
     <div class="container">
         <!-- Introducción breve -->
         <section id="introduccion" class="my-5">
+            <!-- Formulario para agregar registros -->
             <div class="card mb-4">
-                <div class="card-header">
-                    <h3>3.3</h3>
-                </div>
                 <div class="card-body">
-                    <!-- Formulario para agregar registros -->
-        <div class="card mb-4">
-            <div class="card-body">
-                <h2 class="card-title">Agregar Registro</h2>
-                <form id="agregarForm">
-                    <div class="form-group">
-                        <label for="nombre">Nombre:</label>
-                        <input type="text" class="form-control" id="nombre" required>
-                    </div>
-                    <div class="form-group">
-                        <label for="edad">Edad:</label>
-                        <input type="number" class="form-control" id="edad" required>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Agregar</button>
-                </form>
-            </div>
-        </div>
-
-        <!-- Contenedor para mostrar registros -->
-        <div class="card">
-            <div class="card-body">
-                <h2 class="card-title">Registros</h2>
-                <div id="output"></div>
-            </div>
-        </div>
+                    <h2 class="card-title">Agregar Registro</h2>
+                    <form id="agregarForm">
+                        <div class="form-group">
+                            <label for="nombre">Nombre:</label>
+                            <input type="text" class="form-control" id="nombre" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="edad">Edad:</label>
+                            <input type="number" class="form-control" id="edad" required>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Agregar</button>
+                    </form>
                 </div>
             </div>
-        </section>
+
+            <!-- Contenedor para mostrar registros -->
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">Registros</h2>
+                    <div id="output"></div>
+                </div>
+            </div>
+    </div>
+    </section>
 
     </div>
-  <footer>
-      	<div class="row logo">
-      		<div class="col-md-8"><p class="texto_f">
-				<strong><a href="http://www.cucea.udg.mx/">CENTRO UNIVERSITARIO DE CIENCIAS ECONÓMICO ADMINISTRATIVAS</a></strong><br>
-				<a href="http://www.cucea.udg.mx/es/coordinacion-de-extension" target="_blank">Coordinación de Extensión</a><br>
-				Periférico Norte N° 799, Núcleo Universitario Los Belenes,<br>C.P. 45100, Zapopan, Jalisco, México.<br>
-				Teléfono: +52 (33) 3770 3300</p>
-     		</div>
-      		<div class="col-md-4 texto_f nav_f">
-			<li>Conceptualización de servicios en la nube</li>
-				<li>Martin Pizano Moreno</li>
-     		    <li>mpizanom@gmail.com</li>
-      		</div>
-      		<div class="col-md-12 nav_f text-center">
-				<br><br><br>
-				<p style="font-size:12px;">Derechos reservados © 1997 - 2025. Universidad de Guadalajara. Sitio desarrollado por <a href="http://www.cucea.udg.mx/es/coordinacion-de-extension" target="_blank">Coordinación de Extensión</a> |  <a href="?q=creditos/">Créditos de sitio</a> | <a href="https://www.udg.mx/politica-de-privacidad-y-manejo-de-datos">Política de privacidad y manejo de datos</a></p>
-
-      		</div>
-      	</div>
-      	<div class="row" style="bottom: 0; position: absolute; clear: both">
-      		     &shy;
-      	</div>
-      </footer>
-    <script type="text/javascript">
-        function mostrar() {
-            document.getElementById("ocultar").style.display = "block";
-        }
-
-        function ocultar() {
-            document.getElementById("ocultar").style.display = "none";
-        }
+    <script src="script.js"></script>
+    <script>
+        // Cargar registros al cargar la página
+        window.addEventListener('DOMContentLoaded', function () {
+            mostrarRegistros();
+        });
     </script>
-  
+    <footer>
+        <div class="row logo">
+            <div class="col-md-8">
+                <p class="texto_f">
+                </p>
+            </div>
+            <div class="col-md-4 texto_f nav_f">
+                <li>Conceptualización de servicios en la nube</li>
+                <li>Martin Pizano Moreno</li>
+                <li>mpizanom@gmail.com</li>
+            </div>
+            <div class="col-md-12 nav_f text-center">
+                <br><br><br>
+
+            </div>
+        </div>
+        <div class="row" style="bottom: 0; position: absolute; clear: both">
+            &shy;
+        </div>
+    </footer>
+
+
 </body>
 
 </html>
