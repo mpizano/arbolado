@@ -1,0 +1,134 @@
+<!DOCTYPE html
+    PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es-MX" xml:lang="es-MX">
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta id="" name="" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+    <title>Modelo Educativo</title>
+    <meta name="Keywords" content="" />
+    <meta name="Description" content="Modelo Educativo" />
+    <meta name="Author" content="martin.pizano@udg.mx" />
+    <!-- CSS styles for this template -->
+    <link href="includes/css/offcanvas.css" rel="stylesheet">
+    <link href="includes/css/styles.css" rel="stylesheet">
+
+    <!-- MENU styles for this template -->
+    <link href="includes/css/menu.css" rel="stylesheet">
+
+    <!-- Los estilos de las librerías:
+				Bootstrap core CSS -->
+
+    <link rel="stylesheet" href="includes/css/font-awesome.min.css">
+    <link href="includes/css/jquery-ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/31cc1d776d.js" crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+
+
+</head>
+
+<body>
+    <div class="page-header">
+        <h2 class="text-center">MPM</h2>
+    </div>
+    <!-- Menú de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">CUCEA</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#introduccion">Introducción</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contenido -->
+    <div class="container">
+        <!-- Introducción breve -->
+        <section id="introduccion" class="my-5">
+            <div class="card mb-4">
+                <div class="card-header">
+                    <h3>3.3</h3>
+                </div>
+                <div class="card-body">
+                    <!-- Formulario para agregar registros -->
+        <div class="card mb-4">
+            <div class="card-body">
+                <h2 class="card-title">Agregar Registro</h2>
+                <form id="agregarForm">
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" class="form-control" id="nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="edad">Edad:</label>
+                        <input type="number" class="form-control" id="edad" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Agregar</button>
+                </form>
+            </div>
+        </div>
+
+        <!-- Contenedor para mostrar registros -->
+        <div class="card">
+            <div class="card-body">
+                <h2 class="card-title">Registros</h2>
+                <div id="output"></div>
+            </div>
+        </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+  <footer>
+      	<div class="row logo">
+      		<div class="col-md-8"><p class="texto_f">
+				<strong><a href="http://www.cucea.udg.mx/">CENTRO UNIVERSITARIO DE CIENCIAS ECONÓMICO ADMINISTRATIVAS</a></strong><br>
+				<a href="http://www.cucea.udg.mx/es/coordinacion-de-extension" target="_blank">Coordinación de Extensión</a><br>
+				Periférico Norte N° 799, Núcleo Universitario Los Belenes,<br>C.P. 45100, Zapopan, Jalisco, México.<br>
+				Teléfono: +52 (33) 3770 3300</p>
+     		</div>
+      		<div class="col-md-4 texto_f nav_f">
+			<li>Conceptualización de servicios en la nube</li>
+				<li>Martin Pizano Moreno</li>
+     		    <li>mpizanom@gmail.com</li>
+      		</div>
+      		<div class="col-md-12 nav_f text-center">
+				<br><br><br>
+				<p style="font-size:12px;">Derechos reservados © 1997 - 2025. Universidad de Guadalajara. Sitio desarrollado por <a href="http://www.cucea.udg.mx/es/coordinacion-de-extension" target="_blank">Coordinación de Extensión</a> |  <a href="?q=creditos/">Créditos de sitio</a> | <a href="https://www.udg.mx/politica-de-privacidad-y-manejo-de-datos">Política de privacidad y manejo de datos</a></p>
+
+      		</div>
+      	</div>
+      	<div class="row" style="bottom: 0; position: absolute; clear: both">
+      		     &shy;
+      	</div>
+      </footer>
+    <script type="text/javascript">
+        function mostrar() {
+            document.getElementById("ocultar").style.display = "block";
+        }
+
+        function ocultar() {
+            document.getElementById("ocultar").style.display = "none";
+        }
+    </script>
+  
+</body>
+
+</html>
