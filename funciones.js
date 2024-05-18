@@ -1,6 +1,5 @@
 $(document).ready(function() {
     let registros = [];
-
     $("#formAgregar").submit(function(event) {
         event.preventDefault();
         const nombre = $("#nombreAgregar").val();
